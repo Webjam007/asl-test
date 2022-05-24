@@ -1,0 +1,670 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('assets/fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('assets/fonts/Gilroy-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('assets/fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('assets/fonts/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('assets/fonts/Gilroy-Extrabold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Balsamiq Sans';
+    src: local('Balsamiq Sans Bold Italic'), local('Balsamiq-Sans-Bold-Italic'),
+        url('assets/fonts/BalsamiqSans-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Gilroy';
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #14161B;
+    margin: 0;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    outline: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+a:hover {
+    color: #DA1648;
+}
+
+a:focus {
+    outline: none;
+}
+
+img {
+    width: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 6rem;
+    }
+}
+
+@media (min-width: 1680px) {
+    .container {
+        max-width: 168rem;
+        padding: 0;
+    }
+}
+
+/*Buttons*/
+.btn {
+    display: inline-block;
+    border-radius: 3.5rem;
+    vertical-align: middle;
+    transition: color .2s linear;
+    text-align: center;
+    user-select: none;
+    white-space: nowrap;
+    width: fit-content;
+    border: none;
+}
+
+.btn-outline {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #14161B;
+    border: 1px solid #14161B;
+    padding: 0.857em 5em;
+    height: 100%;
+    max-width: 22rem;
+}
+
+@media (min-width: 1024px) {
+    .btn-outline {
+        padding: 0.857em 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn-outline {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .btn-outline {
+        padding: 0.857em 5em;
+    }
+}
+
+.btn-outline:hover {
+    border: 1px solid #DA1648;
+}
+
+.btn-header {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .btn-header {
+        display: inline-block;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-header {
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .btn-header {
+        margin-right: 4rem;
+    }
+}
+
+@media (min-width: 1680px) {
+    .btn-header {
+        margin-right: 6rem;
+    }
+}
+
+.btn-red {
+    background: #DA1648;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.18;
+    padding: 0.89em 5.35em;
+    max-width: 27rem;
+    max-height: 5rem;
+}
+
+
+
+/* Burger button */
+.nav-toogle {
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    width: 28px;
+    height: 34px;
+    padding: 0;
+    margin-top: -4px;
+}
+
+.nav-toogle__item {
+    width: 28px;
+    height: 2px;
+    background: #14161B;
+    display: block;
+    margin: auto;
+    transition: background-color .2s linear;
+    position: relative;
+    margin-top: -4px;
+}
+
+.nav-toogle__item:after {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: #14161B;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    transition: background-color .2s linear;
+}
+
+.btn-block:hover {
+    cursor: pointer;
+}
+
+.nav-toogle:hover .nav-toogle__item,
+.nav-toogle:hover .nav-toogle__item:after {
+    background-color: #DA1648;
+}
+
+
+/****HEADER*****/
+.header {
+    height: 8rem;
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        height: 13.3rem;
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+    }
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__inner-nav,
+.header__inner-info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .header__inner-info {
+        justify-content: space-between;
+        width: 45%;
+    }
+}
+
+@media (min-width: 1680px) {
+    .header__inner-info {
+        width: 50%;
+    }
+}
+
+.header__inner-nav {
+    justify-content: flex-end;
+}
+
+@media (min-width: 1024px) {
+    .header__inner-nav {
+        justify-content: flex-end;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__inner-nav {
+        justify-content: flex-end;
+        width: 55%;
+    }
+}
+
+@media (min-width: 1680px) {
+    .header__inner-nav {
+        width: 50%;
+    }
+}
+
+.logo {
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    line-height: 1.5;
+    margin-top: -10px
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        font-size: 3.6rem;
+    }
+}
+
+.announce {
+    position: absolute;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    top: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .announce {
+        position: static;
+        text-align: left;
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .announce {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .announce {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .announce {
+        margin-left: 4rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1680px) {
+    .announce {
+        margin-left: 9rem;
+    }
+}
+
+.nav {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .nav {
+        display: flex;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.5;
+        text-transform: lowercase;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 1680px) {
+    .nav {
+        margin: 0 3rem;
+    }
+}
+
+.nav__link {
+    margin: 0 2rem;
+}
+
+@media (min-width: 1680px) {
+    .nav__link {
+        margin: 0 3rem;
+    }
+}
+
+/* Offcanvas menu */
+.menu-open,
+.menu-close {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.menu-open:active,
+.menu-close:active {
+    color: #14161B;
+}
+
+.top-nav .menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 25rem;
+    padding: 2rem;
+    transform: translateX(45rem);
+    transition: transform .7s;
+    background: #f3f3f3;
+}
+
+@media (min-width: 1024px) {
+    .top-nav .menu-wrapper {
+        width: 30rem;
+        transform: translateX(55rem);
+        padding: 3.5rem;
+    }
+}
+
+.top-nav .menu-wrapper.is-opened {
+    transform: translateX(0rem);
+}
+
+.top-nav .menu-wrapper .menu {
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.top-nav .menu-wrapper.is-opened .menu {
+    opacity: 1;
+    transition-delay: .6s;
+}
+
+.top-nav .menu-wrapper .menu a {
+    font-size: 1.5rem;
+}
+
+.top-nav .menu-wrapper .sub-menu {
+    padding: 1rem 0 0 0.7rem;
+}
+
+.top-nav .menu-wrapper .menu-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+
+.top-nav .menu-wrapper .menu-close:hover {
+    color: #DA1648;
+}
+
+.nav-mob {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.nav-mob__link {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.btn-mob {
+    margin-top: 3rem;
+    padding: 0.857em 4em;
+    text-align: center;
+}
+
+
+/* SECTION DEV */
+.dev-banner {
+    position: relative;
+    max-height: 60rem;
+}
+
+.dev-banner__text h1 {
+    color: #fff;
+    /* font-size: 13vw; */
+    font-size: clamp(2rem, 13vw, 25rem);;
+    font-weight: 700;
+    line-height: 0.745;
+    text-transform: lowercase;
+    position: absolute;
+    top: 10rem;
+    left: -1.72vw;
+}
+
+.dev-banner__text h1 span{
+margin-left: 3.646vw;
+}
+
+.details {
+display: flex;
+}
+
+
+
+.dev-description,
+.dev-brands {
+    width: 50%;
+    /* margin: 0 -2rem; */
+}
+
+.info-wrapper {
+background: #14161B;
+max-width: 75rem;
+margin-left: auto;
+margin-top: -8rem;
+    z-index: 1;
+    position: relative;
+}
+
+.desc-info {
+    color: #fff;
+    line-height: 1.6;
+    padding: 7.3rem 7.2rem 7.7rem 8rem;
+    position: relative;
+}
+
+.desc-info p {
+    margin-bottom: 4.7rem;
+    z-index: 1;
+    position: relative;
+}
+
+.desc-info__icon {
+    position: absolute;
+    right: 6.5rem;
+    top: 5.7rem;
+    z-index: 0;
+    height: 12.4rem;
+    width: 12.4rem;
+}
+
+
+
+
+.dev-brands {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 2rem; */
+}
+
+.brand-item {
+flex-basis: 33.33333%;
+}
