@@ -656,9 +656,6 @@ margin-top: -8rem;
     width: 12.4rem;
 }
 
-
-
-
 .dev-brands {
     display: flex;
     flex-wrap: wrap;
@@ -667,4 +664,31 @@ margin-top: -8rem;
 
 .brand-item {
 flex-basis: 33.33333%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icon-wp {
+max-width: 19rem;
+}
+
+.icon-woo {
+    max-width: 18.2rem;
+}
+
+.icon-html {
+    max-width: 3.8rem;
+}
+
+.icon-seo {
+max-width: 15.4rem;
+}
+
+.icon-speed {
+    max-width: 16.7rem;
+}
+
+.icon-figma {
+    max-width: 12.2rem;
 }
