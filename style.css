@@ -215,6 +215,7 @@ ul {
     white-space: nowrap;
     width: fit-content;
     border: none;
+    cursor: pointer;
 }
 
 .btn-outline {
@@ -249,6 +250,25 @@ ul {
     border: 1px solid #DA1648;
 }
 
+.btn-outline-white {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 0.82em 5.59em;
+    text-transform: lowercase;
+    max-width: 25rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.235;
+    transition: color .2s linear, background-color .2s linear;
+}
+
+.btn-outline-white:hover {
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #fff;
+}
+
 .btn-header {
     display: none;
 }
@@ -279,7 +299,7 @@ ul {
 }
 
 .btn-red {
-    background: #DA1648;
+    background-color: #DA1648;
     color: #fff;
     font-size: 1.7rem;
     font-weight: 500;
@@ -287,8 +307,17 @@ ul {
     padding: 0.89em 5.35em;
     max-width: 27rem;
     max-height: 5rem;
+    transition: color .2s linear, background-color .2s linear;
 }
 
+.btn-red:hover {
+    background-color: #fff;
+    color: #DA1648;
+}
+
+.btn-trasparent {
+border-color: 1px solid #DA1648;
+}
 
 
 /* Burger button */
@@ -605,7 +634,7 @@ ul {
     line-height: 0.745;
     text-transform: lowercase;
     position: absolute;
-    top: 10rem;
+    top: 8.3rem;
     left: -1.72vw;
 }
 
@@ -616,8 +645,6 @@ margin-left: 3.646vw;
 .details {
 display: flex;
 }
-
-
 
 .dev-description,
 .dev-brands {
@@ -692,3 +719,253 @@ max-width: 15.4rem;
 .icon-figma {
     max-width: 12.2rem;
 }
+
+/* CASE */
+.case {
+    padding-top: 7.6rem;
+}
+.studies {
+    height: 34rem;
+    background: #14161B;
+    display: flex;
+    align-items: center;
+}
+
+.studies-info {
+    display: flex;
+    align-items: center;
+}
+
+.studies-info__title {
+    position: relative;
+}
+
+.studies-info__title h2 {
+    font-size: 9.6rem;
+    font-weight: 700;
+    color: #fff;
+    /* margin:134px 0 132px; */
+    line-height: 1;
+}
+
+.studies-info__title span {
+    font-size: 1.6rem;
+    color: #DA1648;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    top: -3.9rem;
+    left: 0;
+}
+
+.studies-info__subtitle {
+    font-size: 2.4rem;
+    color:#8D8D8D;
+    line-height: 1.8;
+
+}
+
+.studies-info__subtitle {
+margin-left: 22.8rem;
+}
+
+.studies-info-btn {
+    margin-left: auto;
+    margin-right: 2.5rem;
+}
+
+/* Slider start */
+
+.slider {
+    position: relative;
+}
+
+.slider_wrapper {
+display: flex;
+}
+
+.slider_thumbnails {
+    width: 41.666%;
+    background: #F6F6F6;
+    padding-top: 27.7rem;
+}
+
+.slider_thumbnails:before {
+content: '';
+width: 41.666%;
+height: 100%;
+background: #F6F6F6;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.thumbnails-row {
+position: relative;
+height: 100%;
+}
+
+.slider_info {
+    width: calc(100% - 41.666%);
+}
+
+
+/****** Slider elements *****/
+.slider-info__items::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide the slides by default */
+  .slides {
+    display: none;
+  }
+    
+  /* Smartphones (portrait and landscape) ----------- */
+  /* @media only screen and (max-width: 600px) {
+    .prevContainer,
+    .nextContainer {
+      display: none;
+      visibility: hidden;
+    }
+  } */
+
+  .slider-arrows {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 16.2rem;
+      padding-top: 4.7rem;
+  }
+  
+  .prevContainer,
+  .nextContainer {
+    background-color: #FFF;
+    height: 6.4rem;
+    width: 6.4rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prevContainer:hover,
+  .nextContainer:hover {
+    border: 1px solid #737373;
+  }
+
+  
+
+  .prevContainer {
+    margin-right: 2rem;
+  }
+  
+  .prev,
+  .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .prev svg,
+  .next svg {
+    fill: #000;
+    height: 2.9rem;
+    width: 1.7rem;
+    transition: fill .1s linear;
+  }
+
+  .prevContainer:hover .prev svg,
+  .nextContainer:hover .next svg{
+    fill: #737373;
+  }
+  
+  /* .nextContainer {
+    right: 16.2rem;
+  } */
+  
+  
+  /* Thumbnail content */
+  .slide-thumbnail {
+    color: #747474;
+    cursor: pointer;
+    line-height: 1.5;
+    display: flex;
+    transition: color .1s linear;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5.5rem;
+  }
+  
+  .slide-thumbnail:last-child {
+      margin-bottom: 0;
+  }
+  
+  .slide-thumbnail:hover {
+    color: #14161B;
+    
+  }
+
+  .slide-thumbnail.active {
+    font-weight: 600;
+    color: #14161B;
+  }
+
+  .slider-content {
+      padding:11.3rem 0 7.9rem 10rem;
+  }
+
+  .slide-num {
+      font-size: 1.8rem;
+      width: calc(40% + 0.6rem);
+      padding-left: 8.5rem;
+  }
+
+  .sl-date {
+    font-size: 1.6rem;
+    color: #14161B;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .sl-year {
+font-weight: 400;
+color: #737373;
+line-height: 1.5;
+letter-spacing: -0.01rem;
+  }
+
+  h3.sl-title {
+      font-size: 4.4rem;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: -0.01rem;
+      margin-bottom: 3.5rem;
+  }
+
+  p.sl-subtitle {
+      font-size: 2rem;
+      line-height: 1.5;
+letter-spacing: -0.01rem;
+margin-bottom: 5.7rem;
+  }
+
+  .sl-image {
+      margin-bottom: 7rem;
+  }
+
+  .sl-cat {
+font-size: 1.6rem;
+line-height: 1.5;
+color: #737373;
+margin-top: 6.3rem;
+  }
+
+  .sl-tag {
+color: #14161B;
+font-weight: 600;
+  }
