@@ -203,7 +203,7 @@ ul {
 @media (min-width: 1680px) {
     .container {
         max-width: 168rem;
-        /* padding: 0; */
+        padding: 0;
     }
 }
 
