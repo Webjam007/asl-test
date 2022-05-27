@@ -148,7 +148,7 @@ body {
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    font-size: clamp(1rem, 1.250vw, 2.4rem);
+    font-size: clamp(1.4rem, 1.250vw, 2.4rem);
 }
 
 *,
@@ -241,7 +241,7 @@ ul {
     padding: 0.82em 5.59em;
     text-transform: lowercase;
     max-width: 25rem;
-    font-size: clamp(1rem, 0.885vw, 1.7rem);
+    font-size: clamp(1.3rem, 0.885vw, 1.7rem);
     font-weight: 500;
     line-height: 1.235;
     transition: color .2s linear, background-color .2s linear;
@@ -271,7 +271,7 @@ ul {
 .btn-red {
     background-color: #DA1648;
     color: #fff;
-    font-size: clamp(1rem, 0.885vw, 1.7rem);
+    font-size: clamp(1.3rem, 0.885vw, 1.7rem);
     font-weight: 500;
     line-height: 1.18;
     padding: 15px 88px;
