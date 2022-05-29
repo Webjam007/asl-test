@@ -600,6 +600,7 @@ ul {
     top: 2rem;
     right: 2rem;
     font-size: 2rem;
+    color: #14161B;
 }
 
 .top-nav .menu-wrapper .menu-close:hover {
@@ -620,7 +621,7 @@ ul {
 .btn-mob {
     margin-top: 3rem;
     font-size: 1.4rem;
-    font-size: clamp(1rem, 0.729vw, 1.4rem);
+    font-size: clamp(1.2rem, 0.729vw, 1.4rem);
     padding: 0.857em 5.214em;
     text-align: center;
 }
@@ -679,7 +680,8 @@ ul {
 
 @media (min-width: 768px) {
     .info-wrapper {
-        max-width: clamp(1rem, 39.063vw, 75rem);
+        /* max-width: clamp(1rem, 39.063vw, 75rem); */
+        max-width: 88.34%;
         margin-left: auto;
         margin-top: -9.5%;
         z-index: 1;
@@ -718,9 +720,8 @@ ul {
     .dev-brands {
         padding-left: 4%;
     }
-}
 
-.dev-brands:before,
+    .dev-brands:before,
 .dev-brands:after {
     content: '';
     height: 1px;
@@ -739,14 +740,32 @@ ul {
     bottom: 0;
     left: 0;
 }
+}
 
 .brand-item {
-    flex-basis: 33.33333%;
+    flex-basis: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    border-bottom: 1px solid #E9E9E9;
+}
 
+.brand-item img {
+    max-width: 80%;
+}
+
+@media (min-width: 1024px) {
+    .brand-item img {
+        max-width: auto;
+    }
+}
+
+
+@media (min-width: 500px) {
+    .brand-item {
+        flex-basis: 33.33333%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -760,6 +779,13 @@ ul {
 
     .dev-brands {
         order: 0;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .brand-item {
+        border-bottom: none;
     }
 }
 
@@ -794,9 +820,12 @@ ul {
     max-width: 12.2rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+   
 
-    .icon- .icon-html,
+    .icon-wp, 
+    .icon-woo, 
+    .icon-html,
     .icon-seo,
     .icon-speed,
     .icon-figma {
@@ -917,7 +946,7 @@ ul {
 
 @media (min-width: 768px) {
     .studies-info__title h2 {
-        padding: 1.25em 0;
+        padding: 17.134% 0;
     }
 }
 
